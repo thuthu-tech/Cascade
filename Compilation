@@ -1,0 +1,14 @@
+Compilation of CASCADE 
+
+$gfortran tl128.f -static -o tl128.exe
+$gfortran ebtable.f -static -o ebtable.exe
+$gfortran cascnm.f mnhlib.f cascip.f -static -o cascnm.exe
+$gfortran cascip.f cascipm2_128.f mnhlib.f -static -o cascipm2.exe
+
+To run the code (note that depending on the input parameters for tl128.exe, MASSTABLE must be in the directory): 
+
+$./tl128.exe < tl128.inp 
+$./ebtable.exe < ebtable.inp
+$./cascnm.exe < Bi208_M.inp
+
+
